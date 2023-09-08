@@ -1,21 +1,14 @@
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
+from fastapi.responses import JSONResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import JSONResponse  # Correct import for JSONResponse
-
-from fastapi.responses import HTMLResponse
 from puzz2 import CrosswordPuzzle
 import json
 
-
 with open('./crossword_data.json', 'r') as file:
-        crossword_data = json.load(file)
-    
-puzzle = CrosswordPuzzle(size=18, crossword_data=crossword_data)
-        
-puzzle.generate()
-#puzzle.display()
+    crossword_data = json.load(file)
 
+puzzle = CrosswordPuzzle(size=18, crossword_data=crossword_data)
 
 app = FastAPI()
 
@@ -26,11 +19,10 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory=".")
 
 @app.get("/", response_class=HTMLResponse)
+@app.get("/crossword", response_class=HTMLResponse)  # Allow both root and /crossword URLs to serve the HTML
 async def serve_html(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-
-
-@app.get("/crossword")
+@app.get("/crossword/data")
 async def get_crossword_data():
     return JSONResponse(content=crossword_data)
