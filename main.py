@@ -8,7 +8,7 @@ from puzz2 import CrosswordPuzzle
 import json
 
 
-with open('crossword_data.json', 'r') as file:
+with open('./crossword_data.json', 'r') as file:
         crossword_data = json.load(file)
     
 puzzle = CrosswordPuzzle(size=18, crossword_data=crossword_data)
@@ -23,7 +23,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Serve the HTML file using Jinja2Templates
-templates = Jinja2Templates(directory="html")
+templates = Jinja2Templates(directory=".")
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_html(request: Request):
