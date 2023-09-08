@@ -27,7 +27,7 @@ templates = Jinja2Templates(directory="html")
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_html(request: Request):
-    return templates.TemplateResponse("crossword.html", {"request": request})
+    return templates.TemplateResponse("index.html", {"request": request})
 
 
 
