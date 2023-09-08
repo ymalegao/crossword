@@ -1,0 +1,212 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image with a Hindu theme */
+body {
+    background-image: url('wp2276095.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Noto Sans', sans-serif;
+    color: #333; /* Text color */
+    text-align: center; /* Center-align page content */
+    padding: 20px;
+}
+
+/* Center the crossword puzzle grid and other elements */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the grid */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the grid */
+    position: relative;
+    left: 40px; /* Move the grid to the right by 20px */
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff; /* Background color for empty cells */
+}
+
+/* Style for selected cell */
+td.selected {
+    background-color: #e0e0e0; /* Background color for selected cell */
+}
+
+/* Style for correct answer cell */
+td.correct {
+    background-color: #8eff8e; /* Background color for correct answers */
+}
+
+/* Style for incorrect answer cell */
+td.incorrect {
+    background-color: #ff8e8e; /* Background color for incorrect answers */
+}
+
+td.incorrect.correct {
+    background-color: #8eff8e; /* Background color for incorrect answers */
+}
+
+/* Clues and user input section */
+.clues {
+    position: absolute;
+    left: 10px; /* Adjust this value to position the clues on the left */
+    top: 30%; /* Center vertically */
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for clues */
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the clues */
+    text-align: left; /* Align text to the left for all clues */
+}
+
+.check-button {
+    background-color: #ff6600; /* Orange button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition for button color */
+}
+
+.check-button:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+}
+
+/* Feedback message style */
+#feedback {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff; /* White text color for feedback message */
+    background-color: #000000; /* Blue background color for feedback message */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the feedback message */
+}
+
+/* Style for clue labels */
+/* Style for clue labels */
+.clue-labels {
+    position: absolute;
+    left: 3px; /* Adjust this value to position the labels on the left */
+    top: 0%; /* Shift the horizontal labels up */
+    transform: translateY(-50%);
+    width: 30%; /* Increase the width to accommodate all the labels */
+    text-align: center; /* Center-align the labels */
+}
+
+/* Style for vertical clue labels */
+.clue-labels.vertical {
+    top: 47%; /* Shift the vertical labels up */
+    left: 30px; /* Remove left positioning for vertical labels */
+    right: 10px; /* Adjust this value to position the vertical labels on the right */
+    text-align: right; /* Right-align the text within the vertical labels */
+    padding-right: 10px; /* Adjust the padding-right value to move the text to the left */
+}
+
+
+/* Add CSS styles for the modal */
+/* The Modal (background) */
+
+
+#feedback-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    overflow: auto;
+}
+
+/* Style for the modal content */
+/* Custom Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button Colors */
+.modal-button-primary {
+    background-color: #0074cc;
+    color: #fff;
+}
+
+.modal-button-secondary {
+    background-color: #ccc;
+    color: #333;
+}
+
+
+
+/* Style for the close button (×) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

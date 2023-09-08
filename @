@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+    <!-- Crossword Puzzle Grid -->
+    <!-- Crossword Puzzle Grid -->
+    <table id="crossword-grid">
+    </table>
+    
+    <!-- Labels for Clues -->
+    <div class="clue-labels"></div>
+
+
+    <!-- Clues -->
+    <div class="clues">
+    </div>
+
+    <!-- User Input and Check Button -->
+    <div class="user-input">
+        <label for="answer">Enter your answer:</label>
+        <input type="text" id="answer" placeholder="Enter answer">
+        <button id="check-button" class="check-button">Check Answer</button>
+    </div>
+
+    <!-- Feedback Message -->
+    <div id="feedback"></div>
+
+    <!-- JavaScript -->
+    <script src="static/script.js"></script>
+</body>
+</html>
+
+

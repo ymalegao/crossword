@@ -1,0 +1,95 @@
+{
+  "clues": [
+    {
+      "clue": "The number of times a day Hindus pray",
+      "answer": "Three",
+      "row": 10,
+      "col": 10,
+      "position": 6,
+      "direction": "horizontal"
+    },
+    {
+      "clue": "The country with the largest Hindu population",
+      "answer": "India",
+      "row": 8,
+      "col": 9,
+      "position": 5,
+      "direction": "horizontal"
+    },
+    {
+      "clue": "The country with the highest percentage Hindu population",
+      "answer": "Nepal",
+      "row": 4,
+      "col": 10,
+      "position": 3,
+      "direction": "horizontal"
+    },
+    {
+      "clue": "The religion's holy books",
+      "answer": "Vedas",
+      "row": 15,
+      "col": 4,
+      "position": 10,
+      "direction": "horizontal"
+    },
+    {
+      "clue": "The Hindu belief that you are reborn after death",
+      "answer": "Reincarnation",
+      "row": 1,
+      "col": 10,
+      "position": 1,
+      "direction": "vertical"
+    },
+    {
+      "clue": "The creator form of Brahman",
+      "answer": "Brahma",
+      "row": 6,
+      "col": 8,
+      "position": 4,
+      "direction": "horizontal"
+    },
+    {
+      "clue": "The sustainer form of Brahman",
+      "answer": "Vishnu",
+      "row": 13,
+      "col": 6,
+      "position": 9,
+      "direction": "horizontal"
+    },
+    {
+      "clue": "The destroyer form of Brahman",
+      "answer": "Shiva",
+      "row": 12,
+      "col": 4,
+      "position": 7,
+      "direction": "vertical"
+    },
+    
+    {
+      "clue": "One of their main festivals; the festival of light",
+      "answer": "Diwali",
+      "row": 12,
+      "col": 7,
+      "position": 8,
+      "direction": "vertical"
+    },
+    {
+      "clue": "The belief that your actions have direct consequences",
+      "answer": "Karma",
+      "row": 16,
+      "col": 0,
+      "position": 11,
+      "direction": "horizontal"
+    },
+    {
+      "clue": "The word for Hindu Gods",
+      "answer": "Deities",
+      "row": 2,
+      "col": 9,
+      "position": 2,
+      "direction": "horizontal"
+    }
+  ]
+}
+
+

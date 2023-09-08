@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the crossword puzzle grid and other elements */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff; /* Background color for empty cells */
+}
+
+/* Style for selected cell */
+td.selected {
+    background-color: #e0e0e0; /* Background color for selected cell */
+}
+
+/* Style for correct answer cell */
+td.correct {
+    background-color: #8eff8e; /* Background color for correct answers */
+}
+
+/* Style for incorrect answer cell */
+td.incorrect {
+    background-color: #ff8e8e; /* Background color for incorrect answers */
+}
+
+/* Clues and user input section */
+.clues {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.check-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Feedback message style */
+#feedback {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Add more styling as needed */
+
+
+
+/* Style for clue labels */
+.clue-labels {
+    position: absolute;
+    top: 0; /* Adjust this value to position the labels */
+    left: 0; /* Adjust this value to position the labels */
+    width: 25%; /* Ensure the labels span the entire container */
+    text-align: center; /* Center-align the labels */
+}
+
+.clue-label {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #fff; /* Background color for the label */
+    border: 1px solid #000; /* Border for the label */
+    border-radius: 4px; /* Rounded corners */
+    font-weight: bold;
+}
