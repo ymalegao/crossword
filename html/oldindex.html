@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religious Crossword</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+    <!-- Crossword Puzzle Grid -->
+    <table id="crossword-grid">
+    </table>
+    
+    <!-- Labels for Clues -->
+    <div class="clue-labels"></div>
+
+    <!-- Clues -->
+    <div class="clues">
+    </div>
+
+    <!-- User Input and Check Button -->
+    <!-- <div class="user-input">
+        <label for="answer">Enter your answer:</label>
+        <input type="text" id="answer" placeholder="Enter answer">
+        <button id="check-button" class="check-button">Check Answer</button>
+    </div> -->
+
+    <!-- Feedback Message -->
+    <div id="feedback"></div>
+
+    <div id="win-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeWinModal()">&times;</span>
+            <p>Congratulations! You've completed the crossword puzzle.</p>
+        </div>
+    </div>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeFeedbackModal()">&times;</span> -->
+            <h2 id="feedback-title">Crossword says...</h2>
+            <p id="feedback-message"></p>
+        </div>
+    </div>
+
+    <div id="custom-modal" class="modal">
+        <div class="modal-content">
+            <span id="custom-modal-title" class="modal-title">Custom Title</span>
+            <p id="custom-modal-message" class="modal-message">Custom Message</p>
+            <input type="text" id="custom-modal-input" class="modal-input">
+            <button id="custom-modal-submit" class="modal-button">Submit</button>
+            <button id="custom-modal-cancel" class="modal-button">Cancel</button>
+        </div>
+    </div>
+
+    <div id="feedback-modal" class="modal-feedback">
+        <div id="feedback-content" class="modal-feedback-content">
+            <span id="feedback-close" class="modal-feedback-close">×</span>
+            <span id="feedback-title" class="modal-feedback-title">Feedback Title</span>
+            <p id="feedback-message" class="modal-feedback-message">Feedback Message</p>
+            <button id="feedback-ok" class="modal-feedback-button">OK</button>
+        </div>
+    </div>
+    
+    
+
+    <!-- JavaScript -->
+    <script src="static/script.js"></script>
+</body>
+</html>
