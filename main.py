@@ -31,6 +31,6 @@ async def serve_html(request: Request):
 
 
 
-@app.get("http://yashie.me/crossword/crossword")
+@app.get("/crossword")
 async def get_crossword_data():
     return JSONResponse(content=crossword_data)
