@@ -8,7 +8,7 @@ from puzz2 import CrosswordPuzzle
 import json
 
 
-with open('./static/crossword_data.json', 'r') as file:
+with open('crossword_data.json', 'r') as file:
         crossword_data = json.load(file)
     
 puzzle = CrosswordPuzzle(size=18, crossword_data=crossword_data)
