@@ -192,7 +192,7 @@ function generateCrosswordGrid() {
 // Function to fetch crossword data from the backend
 async function fetchCrosswordData() {
     try {
-        const response = await fetch("/crossword"); // Replace with your API endpoint
+        const response = await fetch("https://cbc5-73-170-48-85.ngrok.io/crossword"); // Replace with your API endpoint
         if (!response.ok) {
             throw new Error("Failed to fetch crossword data.");
         }
